@@ -1,6 +1,7 @@
 # Challenge ONE | Front End - Portafolio
 
-![challenge-one-portafolio] ()
+(![challenge-one-portafolio](https://github.com/user-attachments/assets/4ec86212-7cbc-4510-afb0-b1645b64bc49)
+)
 
 Este proyecto es una lista interactiva de habilidades web, diseñada con HTML, CSS y JavaScript. Su objetivo principal es mostrar de forma visual y uniforme una serie de iconos y descripciones representativas de diversas tecnologías web.
 
