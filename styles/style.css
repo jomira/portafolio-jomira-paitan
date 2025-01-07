@@ -1,0 +1,658 @@
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+    --color-fondo-secundario: #EAF2FD;
+    --color-secondary: #2A7AE4;
+    --color: #464646;
+}
+
+body {
+    background-color: var(--color-de-fondo-menu);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol,
+li {
+    list-style: none;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    /* margin-inline-start: 0px; */
+    margin-inline-end: 0px;
+    /* padding-inline-start: 40px; */
+    unicode-bidi: isolate;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 80px;
+    /* Ajuste para pantallas pequeñas */
+    margin-right: 10px;
+    /* Espacio entre la imagen y el nombre */
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: left;
+    /*  Alineación a la izquierda para pantallas pequeñas */
+}
+
+.navegacion {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+
+.navegacion__lista li:last-child a {
+    font-weight: bold;
+    /* Aplica negrita a la última opción en todas las pantallas */
+}
+
+
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+.presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 3rem;
+}
+
+/* Estilo para la imagen */
+.presentacion__foto {
+    width: 30%;
+    /* En pantallas grandes la imagen ocupa el 30% */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 20px;
+    /* La imagen tiene margen a la izquierda */
+}
+
+/* Estilo para el contenedor de texto */
+.presentacion__contenedor {
+    width: 65%;
+    /* El texto ocupa el 65% en pantallas grandes */
+    padding: 1.5rem
+}
+
+/* Estilo para las redes */
+
+.redes {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+}
+
+.redes__img a {
+    flex-direction: row;
+    /* Mantiene las redes en fila */
+    gap: 20px;
+    /* Espacio entre las redes */
+    align-items: center;
+    /* Alinea los elementos verticalmente en el centro */
+    margin-right: 20px;
+}
+
+.redes__img img {
+    margin-bottom: 0;
+    /* Elimina el margen inferior en pantallas grandes */
+
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi {
+    background-color: var(--color-fondo-secundario);
+    text-align: left;
+    padding: 4rem;
+    margin: auto;
+}
+
+.sobre-mi__texto {
+    text-align: left;
+    width: 65%;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades {
+    background-color: var(--color-de-fondo);
+    margin: auto;
+    padding: 1rem;
+}
+
+.habilidades__titulo {
+    padding-top: 0.1rem;
+    text-align: center;
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.habilidades__elemento {
+    background-color: white;
+    width: 15%;
+    height: 150px; 
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;  
+}
+
+.habilidades__icono {
+    max-width: 40px; 
+    max-height: 50px; 
+    object-fit: contain; 
+}
+
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones {
+    background-color: var(--color-de-fondo);
+    margin: auto;
+    padding: 2rem;
+}
+
+.aficiones__titulo {
+    padding-top: 0.1rem;
+    text-align: center;
+}
+
+.aficiones__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.aficiones__elemento {
+    background-color: white;
+    width: 15%;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 9.6rem;
+}
+
+.aficiones__icono{
+    max-width: 30px;
+    max-height: 50px;
+    object-fit: contain;
+
+}
+
+/* ---------------------------- Sección de Formacion Academica --------------------------- */
+
+.formacion {
+    background-color: var(--color-fondo-secundario);
+    padding-bottom: 8.5em;
+}
+
+.formacion__titulo {
+
+    padding-top: 2.5rem;
+    text-align: center;
+    padding: 2.5rem;
+    margin: auto;
+}
+
+.formacion__lista {
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+    width: 60%;
+}
+
+.formacion__elemento {
+    display: grid;
+    /* Activa el modelo Flexbox */
+    align-items: center;
+    /* Alinea los elementos verticalmente al centro */
+    gap: 1rem;
+    /* Añade espacio entre la imagen y el texto */
+
+    background-color: white;
+    width: 35%;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 7.5rem;
+}
+
+.formacion__nombre,
+.formacion__detalle {
+    text-align: center;
+    margin: 0;
+}
+
+.formacion__elemento div {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    /* Coloca el nombre y detalle uno debajo del otro */
+    justify-content: center;
+    /* Centra verticalmente el texto */
+}
+
+.formacion__icono {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos__titulo {
+    text-align: center;
+    padding: 2rem;
+}
+
+.proyectos__experiencia {
+    display: grid;
+    grid-template-areas: "first-article second-article";
+    margin: 3rem 5rem;
+}
+
+.proyectos__experiencia__primer__articulo {
+    grid-area: first-article;
+}
+
+.proyectos__experiencia__segundo__articulo {
+    grid-area: second-article;
+}
+
+.proyectos__experiencia__informacion {
+    text-align: left;
+    margin: 7rem 0 7rem 0;
+}
+
+.proyectos__experiencia__img {
+    width: 55vw;
+    margin: 0%;
+}
+
+.btn-secondary {
+    color: var(--color-secondary);
+    background: var(--color-de-fondo);
+    border: 1px solid var(--color-secondary);
+}
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contacto {
+    background: var(--color-fondo-secundario);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas iguales */
+    align-items: center;
+    /* Centrado vertical de los elementos */
+    padding: 2rem;
+    /* Espaciado interno */
+}
+
+.contacto__imagen img {
+    display: block;
+    max-width: 100%;
+    /* Imagen no excede su contenedor */
+    height: auto;
+    /* Mantiene proporción */
+    border-radius: 10px;
+    /* Opcional: bordes redondeados */
+}
+
+.contacto__formulario {
+    padding: 2rem;
+    margin: auto;
+    max-width: 500px;
+    /* Anchura máxima */
+    width: 100%;
+    height: auto;
+    /* Ajusta según el contenido */
+    text-align: center;
+}
+
+
+.contacto__titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.contacto__label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--color-secondary);
+}
+
+.contacto__input,
+.contacto__textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    /* Bordes claros */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 0.75rem;
+    /* Espaciado interno */
+    margin-bottom: 1rem;
+    /* Separación entre campos */
+    font-size: 1rem;
+    /* Tamaño de texto */
+    box-sizing: border-box;
+    /* Considera padding en el tamaño total */
+}
+
+.contacto__input:focus,
+.contacto__textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    /* Cambia de color al seleccionar */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Sombra al enfoque */
+}
+
+.btn-primary {
+    background: var(--color-secondary);
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn {
+    margin: 1rem 0 0 0;
+    outline: none;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #0a2851;
+    /* Color más oscuro al pasar el mouse */
+}
+
+
+
+/* ---------------------------------footer------------------ */
+
+footer {
+    background: #ffffff;
+    padding: 1vh;
+    text-align: center;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.footer-titulo {
+
+    font-weight: 600;
+    color: var(--color);
+}
+
+.footer-parrafo {
+
+    font-weight: 400;
+    color: var(--color);
+}
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        justify-content: flex-start;
+
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1rem;
+        margin-right: auto;
+
+    }
+
+    .navegacion__lista {
+        display: flex;
+        gap: 1rem;
+        margin-left: auto;
+    }
+
+    .navegacion__elemento a {
+        font-size: 0.9rem;
+    }
+
+    .presentacion__foto {
+        width: 30%;
+        /* La imagen ocupa el 30% en pantallas grandes */
+        position: absolute;
+        right: 10px;
+    }
+
+    .presentacion__contenedor {
+        width: 65%;
+        /* El contenido ocupa el 65% */
+    }
+
+
+
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+
+    .presentacion__foto {
+        width: 20%;
+        /* La imagen ocupa el 20% en pantallas grandes */
+        position: absolute;
+        right: 10px;
+        margin-top: 30px;
+    }
+}
+
+/* Pantallas móviles */
+@media (max-width: 768px) {
+    .navegacion__lista {
+        display: flex;
+        /* Asegura que el menú sea visible, pero solo con la última opción */
+        flex-direction: column;
+        /* Organiza las opciones de manera vertical */
+
+    }
+
+    /* Ocultar todas las opciones excepto la última */
+    .navegacion__lista li:not(:last-child) {
+        display: none;
+        /* Oculta todas las opciones, excepto la última */
+    }
+
+    /* Estilos específicos para la última opción */
+    .navegacion__lista li:last-child {
+        display: block;
+        /* Asegura que la última opción esté visible */
+        text-align: right;
+        /* Alinea la última opción a la derecha */
+        position: absolute;
+        right: 10px;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        /* Cambia el flujo a columna */
+        align-items: center;
+        /* Centra la imagen y el contenido */
+
+    }
+
+    /* En pantallas móviles, la imagen ocupará el 50% de la pantalla */
+    .presentacion__foto {
+        width: 30%;
+        /* La imagen ocupa el 50% en pantallas pequeñas */
+        margin-left: 0;
+        margin-bottom: 20px;
+        /* Añadir un margen abajo de la imagen */
+    }
+
+    .presentacion__contenedor {
+        width: 100%;
+        /* El contenido ocupa el 100% */
+    }
+
+    .habilidades__elemento {
+        width: 35%;
+    }
+
+    .aficiones__elemento {
+        width: 35%;
+
+    }
+
+    .formacion__lista {
+        flex-direction: column;
+        width: 90%;
+        align-items: center
+    }
+
+    .formacion__elemento {
+        width: 80%;
+        padding: 1rem;
+        margin-bottom: 6rem;
+    }
+
+    .formacion__icono {
+        max-width: 70%;
+    }
+
+
+    .proyectos__experiencia {
+        display: flex;
+        flex-direction: column; /* Cambia el flujo del contenido a una columna */
+        align-items: center; /* Centra los elementos */
+        gap: 2rem; /* Espaciado entre los elementos */
+        margin: 2rem 1rem; /* Margen más ajustado */
+    }
+
+    .proyectos__experiencia__primer__articulo,
+    .proyectos__experiencia__segundo__articulo {
+        display: flex;
+        flex-direction: column; /* Mantén el contenido interno en columna */
+        align-items: center; /* Centra el contenido dentro del artículo */
+        justify-content: center; /* Centra verticalmente */
+        width: 100%; /* Asegúrate de que ocupen todo el ancho */
+        text-align: center; /* Centra el contenido dentro del artículo */
+    }
+
+    .proyectos__experiencia__img {
+        width: 80%; /* Ajusta el tamaño de la imagen para que se vea bien en pantallas pequeñas */
+        margin-bottom: 0 auto 1rem; /* Añade espacio debajo de la imagen */
+    }
+
+    .proyectos__experiencia__informacion {
+        margin: 0; /* Elimina márgenes adicionales en dispositivos pequeños */
+        padding: 1rem; /* Espaciado interno */
+        text-align: center; /* Centra el texto */
+    }
+
+    .btn-secondary,
+    .btn-primary {
+        display: inline-block;
+        margin: 0.5rem; /* Espacio entre los botones */
+    }
+
+
+
+    .contacto {
+        grid-template-columns: 1fr;
+        /* Una sola columna */
+        justify-content: center;
+        /* Centrado horizontal */
+    }
+
+    .contacto__imagen {
+        display: none;
+    }
+
+    .contacto__formulario {
+        margin: 0 auto;
+        /* Asegura que esté centrado */
+        max-width: 90%;
+        /* Ajusta el ancho para móviles */
+    }
+}
+
+/* Ocultar en tablets (pantallas menores a 1024px) */
+@media (max-width: 1024px) {
+    .contacto {
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna */
+        justify-content: center;
+        /* Centra horizontalmente */
+        text-align: center;
+        /* Centra el contenido del texto */
+    }
+
+    .contacto__imagen {
+        display: none;
+        /* Oculta la imagen */
+    }
+}
